@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Сайт-візитка про MrBeast — американського YouTube-блогера та філантропа.">
+  <title>MrBeast — сайт-візитка</title>
+  <!-- Bootstrap 5: використовується CDN; власні стилі нижче зберігають читабельність сторінки й без нього. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --ink: #202a35; --muted: #637080; --accent: #1687e8; --paper: #f4f7fa; --line: #dfe6ed; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+    .site-nav { background: #fff; border-bottom: 1px solid var(--line); }
+    .brand-mark { display:inline-grid; place-items:center; width:38px; height:38px; border-radius:10px; background:var(--accent); color:white; font-weight:800; letter-spacing:-1px; }
+    .hero { padding: 4.5rem 0 3.5rem; background: linear-gradient(135deg,#fff 0%,#eaf4fd 100%); border-bottom:1px solid var(--line); }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.13em; font-size:.78rem; font-weight:800; }
+    .hero h1 { font-size:clamp(2.6rem,7vw,4.5rem); line-height:1.04; letter-spacing:-.055em; font-weight:800; }
+    .hero-copy { max-width: 650px; color:var(--muted); font-size:1.12rem; }
+    .portrait { width:min(100%,300px); aspect-ratio:1; margin-inline:auto; display:grid; place-items:center; border-radius:50%; background:radial-gradient(circle at 35% 25%,#75c2ff,#1687e8 56%,#0755a3); color:white; border:10px solid white; box-shadow:0 18px 45px #1e5d9330; }
+    .portrait span { font-size:5.5rem; line-height:1; font-weight:900; letter-spacing:-.09em; }
+    .section { padding:4rem 0; }
+    .section-title { font-size:clamp(1.7rem,4vw,2.35rem); font-weight:750; letter-spacing:-.035em; }
+    .section-lead { color:var(--muted); max-width:720px; }
+    .info-card { height:100%; padding:1.5rem; background:white; border:1px solid var(--line); border-radius:16px; }
+    .info-card h3 { font-size:1.08rem; font-weight:750; }
+    .info-card p { margin-bottom:0; color:var(--muted); }
+    .number { color:var(--accent); font-size:1.8rem; font-weight:850; letter-spacing:-.05em; }
+    .quote { padding:1.6rem 1.8rem; border-left:4px solid var(--accent); background:#fff; border-radius:0 12px 12px 0; color:#3e4b59; }
+    .site-footer { padding:1.5rem 0; background:#fff; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    .btn-primary { background:var(--accent); border-color:var(--accent); }
+    .btn-primary:hover { background:#096fc4; border-color:#096fc4; }
+    @media (max-width:767px) { .hero { padding:3rem 0; text-align:center; } .hero-copy { margin-inline:auto; } .hero-actions { justify-content:center; } .section { padding:3rem 0; } }
+  </style>
+</head>
+<body>
+  <nav class="site-nav navbar navbar-expand-lg" aria-label="Головна навігація">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#top"><span class="brand-mark">MB</span><span>Сайт-візитка</span></a>
+      <div class="d-flex gap-3 small"><a class="link-secondary text-decoration-none" href="#about">Про нього</a><a class="link-secondary text-decoration-none" href="#achievements">Досягнення</a></div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-7 order-2 order-md-1">
+            <div class="eyebrow mb-3">Блогер · Підприємець · Філантроп</div>
+            <h1 class="mb-4">MrBeast<span class="text-primary">.</span></h1>
+            <p class="hero-copy mb-4">Джиммі Дональдсон — американський відеоблогер, відомий масштабними челенджами, незвичайними експериментами та благодійними проєктами.</p>
+            <div class="hero-actions d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="https://www.youtube.com/@MrBeast" target="_blank" rel="noopener noreferrer">YouTube-канал ↗</a>
+              <a class="btn btn-outline-secondary btn-lg" href="#about">Дізнатися більше</a>
+            </div>
+          </div>
+          <div class="col-md-5 order-1 order-md-2"><div class="portrait" role="img" aria-label="Графічний знак MB, що представляє MrBeast"><span>MB</span></div><p class="text-center small text-secondary mt-3 mb-0">Джиммі «MrBeast» Дональдсон</p></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="eyebrow mb-2">Коротка біографія</div>
+        <h2 class="section-title mb-3">Хто такий MrBeast?</h2>
+        <p class="section-lead mb-4">MrBeast (справжнє ім’я — Джеймс Стівен «Джиммі» Дональдсон) народився 7 травня 1998 року в США. Він почав публікувати відео на YouTube ще підлітком, а згодом став одним із найвідоміших авторів платформи.</p>
+        <div class="row g-3">
+          <div class="col-md-4"><article class="info-card"><h3>Відомий формат</h3><p>Масштабні випробування, змагання, незвичайні експерименти та великі призи для учасників.</p></article></div>
+          <div class="col-md-4"><article class="info-card"><h3>Підприємництво</h3><p>Розвиває власні бренди та медіапроєкти, поєднуючи розваги з бізнесом.</p></article></div>
+          <div class="col-md-4"><article class="info-card"><h3>Благодійність</h3><p>Організовує ініціативи зі збору коштів, допомоги людям і підтримки екологічних проєктів.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" id="achievements">
+      <div class="container">
+        <div class="eyebrow mb-2">Діяльність</div>
+        <h2 class="section-title mb-3">Основні досягнення</h2>
+        <p class="section-lead mb-4">Його творчість вплинула на формат сучасних YouTube-відео та показала, як розважальний контент може привертати увагу до суспільно важливих тем.</p>
+        <div class="row g-3">
+          <div class="col-md-6"><article class="info-card"><div class="number">01</div><h3 class="mt-2">Популярний YouTube-автор</h3><p>Створює відео з великими бюджетами, складними завданнями та високою динамікою оповіді.</p></article></div>
+          <div class="col-md-6"><article class="info-card"><div class="number">02</div><h3 class="mt-2">#TeamTrees та #TeamSeas</h3><p>Підтримав масштабні благодійні кампанії, спрямовані на висадження дерев і очищення водойм.</p></article></div>
+          <div class="col-md-6"><article class="info-card"><div class="number">03</div><h3 class="mt-2">Beast Philanthropy</h3><p>Благодійний напрям, через який команда MrBeast допомагає громадам і людям, що потребують підтримки.</p></article></div>
+          <div class="col-md-6"><article class="info-card"><div class="number">04</div><h3 class="mt-2">Вплив на цифрову культуру</h3><p>Його підхід до створення відео надихнув багатьох авторів експериментувати з масштабом і подачею контенту.</p></article></div>
+        </div>
+        <div class="quote mt-4">«Розваги можуть бути не лише цікавими, а й корисними» — саме так можна коротко описати поєднання відеоконтенту та благодійності у діяльності MrBeast.</div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="info-card d-md-flex align-items-center justify-content-between gap-4">
+          <div><h2 class="section-title mb-2">Стежити за новими відео</h2><p class="text-secondary mb-md-0">Офіційні сторінки та додаткова інформація про проєкти MrBeast.</p></div>
+          <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0"><a class="btn btn-primary" href="https://www.youtube.com/@MrBeast" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a class="btn btn-outline-secondary" href="https://www.instagram.com/mrbeast/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="btn btn-outline-secondary" href="https://www.beastphilanthropy.org/" target="_blank" rel="noopener noreferrer">Благодійність ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span>Навчальний проєкт · Сайт-візитка MrBeast</span><span>Створено з HTML, CSS та Bootstrap 5</span></div></footer>
+</body>
+</html>
